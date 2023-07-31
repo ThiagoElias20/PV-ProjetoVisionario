@@ -1,0 +1,192 @@
+
+/*Anotações responsívicas
+width de até 1366px ele tanka dbuenas Tenho que fzr ser tankável
+para com height de 768px
+
+Largura tankavel até: 1366px
+Altura tankavel até: 768px
+
+1272 é o maximo tankavel da largura do background relogio
+*/
+@media (max-width: 900px) {
+  .resume {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 50px 0px;
+  }
+
+  .resume-text {
+    width: 90%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .resume-text img {
+    width: 200px;
+    height: auto;
+  }
+
+  .default-img {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .default-img img {
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+  }
+  /*Quem somos*/
+  .quem-somos {
+    flex-direction: column;
+  }
+  .quem-somos .default-img {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 85vw;
+    height: fit-content;
+  }
+  .quem-somos--text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .quem-somos--text h1 {
+    font-size: 6vw;
+  }
+  .quem-somos--text p {
+    font-size: 3.7vw;
+  }
+  .quem-somos--text p span {
+    font-size: 3.7vw!important;
+  }
+  .selos {
+    flex-direction: column;
+    height: auto;
+  }
+  .selos img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .selos p {
+    width: 70%;
+    text-align: center;
+  }
+  /*Faixa aviso*/
+  .faixa-aviso {
+    height: fit-content;
+  }
+  .faixa-aviso--text h2 {
+    font-size: 3vw;
+  }
+  /*Aprendizado*/
+  .aprendizado-text {
+    margin: 0;
+  }
+  .aprendizado h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .aprendizado h2 {
+    font-size: 16px;
+    width: 90%;
+  }
+  .aprendizado h2 span {
+    font-size: 18px;
+  }
+  .aprendizado h1 {
+    font-size: 24px;
+  }
+  .aprendizado h2 {
+    font-size: 14px;
+  }
+  .aprendizado h2 span {
+    font-size: 16px;
+  }
+  .aprendizado-comp {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .aprendizado-item {
+    width: 90%;
+    margin: 10px 0;
+  }
+  .aprendizado-item img {
+    width: 60px;
+    height: 60px;
+    padding-left: 0;
+  }
+  .aprendizado-item.pt1 img,
+  .aprendizado-item.pt2 img {
+    top: 20%;
+    left: 50%;
+  }
+  .aprendizado-item--text h1 {
+    font-size: 14px;
+  }
+  .aprendizado-item--text p {
+    font-size: 10px;
+  }
+  /*Perguntas frequentes*/
+  .perguntas-frequentes {
+    padding: 0 20px;
+  }
+  .perguntas-frequentes h1 {
+    text-align: center;
+  }
+  details {
+    width: 100%;
+    max-width: 600px;
+  }
+  summary:before {
+    left: 0.8rem;
+  }
+  details summary {
+    padding-left: 1.8rem;
+  }
+
+  details[open] summary:before {
+    transform: rotate(90deg);
+  }
+
+  details p {
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-left: 1.8rem;
+  }
+  /*Clientes*/
+  .clientes h1 {
+    text-align: center;
+  }
+  .clientes a {
+  background: linear-gradient(to right ,#1aaa51, #21cc63);
+  box-shadow: 0 0 10px #21cc63;
+  margin-top: 40px;
+  }
+  .swiper {
+    width: 300px;
+    box-shadow: 0 0 30px #21cc63;
+
+  }
+  .swiper-slide {
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  .resume-text h1 {
+    font-size: 7vw;
+  }
+  .resume-text a,
+  .aprendizado a,
+  .clientes a {
+    width: 90%;
+  }
+}
